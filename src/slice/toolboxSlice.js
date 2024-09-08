@@ -24,7 +24,7 @@ export const toolboxSlice = createSlice({
             state[action.payload.item].color = action.payload.color
         },
         changeBrushSize: (state, action) => {
-            state[action.payload.item].size = action.payload.size
+            state[action.payload.item].size = parseInt(action.payload.size)
         }
     }
 })
